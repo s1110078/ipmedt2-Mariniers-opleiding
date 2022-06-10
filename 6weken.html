@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<script src="js/main.js"></script>
+		<script src="js/6weken.js"></script>
+		<title>TheChosenOnes</title>
+	</head>
+	<body>
+		<main>
+			<!-- tijdlijn overlay -->
+			<article id="js--tijdlijn" class="tijdlijn">
+				<button id="js--arrow" class="tijdlijn__arrow">
+					<i class="fa fa-close"></i>
+				</button>
+				<section id="js--navStart" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Start</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav9maanden" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 9 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav8maanden" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 8 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav6maanden" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 6 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav5maanden" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 5 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav4maanden" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 4 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav3maanden" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 3 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav6weken" class="tijdlijn__box start tijdlijn__box--active">
+					<p class="tijdlijn__box__txt">Nog 6 weken</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav9uur" class="tijdlijn__box end">
+					<p class="tijdlijn__box__txt">Nog 9 uur</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--naveindceremonie" class="tijdlijn__box start">
+					<p class="tijdlijn__box__txt">Eindceremonie</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--navscore" class="tijdlijn__box end">
+					<p class="tijdlijn__box__txt">Score</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--navinfo" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Informatiepagina</p>
+				</section>
+			</article>
+
+			<!-- header -->
+			<article id="js--header" class="header">
+				<section id="js--progressiebar" class="header__progressbar" tabindex="1">
+					<div id="js--progressiebarVulling" class="header__progressbar__balk">
+						<p class="header__progressbar__balk__txt">80%</p>
+					</div>
+				</section>
+			</article>
+
+			<div class="animatie">
+				<h1>Nog 6 weken</h1>
+				<p>De loopgraven</p>
+			</div>
+
+			<!-- modal begin -->
+			<article class="background background__4maanden" id="js--background">
+				<section id="js--modal" class="background__modal">
+					<button id="js--arrow--modal" class="background__arrow">
+						<i class="fa fa-close"></i>
+					</button>
+					<picture class="startmodal__figure">
+						<source srcset="images/sergeantDeBoer6_1044.webp" media="(min-width: 1000px)" type="image/webp" />
+						<source srcset="images/sergeantDeBoer6_640.webp" media="(min-width: 250px)" type="image/webp" />
+						<img
+							class="startmodal__figure__img"
+							srcset="images/sergeantDeBoer6_640.png 640w, images/sergeantDeBoer6_1044.png 1044w"
+							sizes="(min-width: 1000px) 1044px, (min-width: 250px) 640px, 640px"
+							src="images/sergeantDeBoer6_1044.png"
+							alt="sergeant"
+						/>
+					</picture>
+					<section class="background__modal__textarea add__scrollbar">
+						<p class="background__modal__textarea__text remove__overflow">
+							Wanneer je wordt uitgezonden, moet je dag en nacht opassen voor de vijand. Je kan in een loopgraaf dus
+							niet zomaar in slaap vallen en verrast worden door de vijand. <br />
+							<br />
+							Daarom is het van belang dat je altijd alert blijft in de loopgraven,
+							<span id="js--ingevoerdenaam"></span>. <br />
+							<br />
+							Ga met je muis over afbeelding of klik op de afbeeldingen en zie wat er gebeurd.
+						</p>
+						<video class="modal__video" autoplay loop>
+							<source src="videos/hoverTutorial.mp4" type="video/mp4" />
+							Video is niet supported in deze browser
+						</video>
+					</section>
+					<button id="js--6wekenbtn" class="background__modal__button" type="button" name="button">Volgende</button>
+				</section>
+			</article>
+
+			<article class="slideshow">
+				<h2 id="js--6weken--nummer" class="slideshow_number">1/4</h2>
+				<div class="slideshow__6weken__text">De loopgraven</div>
+				<section class="slideshow__main zesWekenOpmaak">
+					<section class="slideshow__main__figure">
+						<div id="js--6weken--img" class="slideshow__main__figure__img zesWeken1 overflow__text" tabindex="0">
+							<p class="zesWeken__overlay__text" id="js--6weken--overlay">
+								Een marinier moet altijd een goed uitzicht hebben op het veld.
+							</p>
+						</div>
+					</section>
+				</section>
+				<section class="slideshow__bottom">
+					<i id="js--6weken--arrowLeft" class="fa fa-arrow-left slideshow__bottom_buttonleft" aria-hidden="true"></i>
+					<button id="js--6weken--volgendeMaandBtn" class="slideshow__bottom_btn" type="button" name="button">
+						Volgende
+					</button>
+					<i id="js--6weken--arrowRight" class="fa fa-arrow-right slideshow__bottom_buttonright" aria-hidden="true"></i>
+				</section>
+			</article>
+		</main>
+	</body>
+</html>

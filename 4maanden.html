@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <script src="js/main.js"></script>
+  <script src="js/4maanden.js"></script>
+  <title>TheChosenOnes</title>
+</head>
+<body>
+  <main>
+    <!-- tijdlijn overlay -->
+    <article id="js--tijdlijn" class="tijdlijn">
+      <button id="js--arrow" class="tijdlijn__arrow"><i class="fa fa-close"></i></button>
+      <section id="js--navStart" class="tijdlijn__box end tijdlijn--done">
+        <p class="tijdlijn__box__txt">Start</p>
+      </section>
+      <hr class="tijdlijn__line tijdlijn--done" />
+      <section id="js--nav9maanden" class="tijdlijn__box start tijdlijn--done">
+        <p class="tijdlijn__box__txt">Nog 9 maanden</p>
+      </section>
+      <hr class="tijdlijn__line tijdlijn--done" />
+      <section id="js--nav8maanden" class="tijdlijn__box end tijdlijn--done">
+        <p class="tijdlijn__box__txt">Nog 8 maanden</p>
+      </section>
+      <hr class="tijdlijn__line tijdlijn--done" />
+      <section id="js--nav6maanden" class="tijdlijn__box start tijdlijn--done">
+        <p class="tijdlijn__box__txt">Nog 6 maanden</p>
+      </section>
+      <hr class="tijdlijn__line tijdlijn--done" />
+      <section id="js--nav5maanden" class="tijdlijn__box end tijdlijn--done">
+        <p class="tijdlijn__box__txt">Nog 5 maanden</p>
+      </section>
+      <hr class="tijdlijn__line tijdlijn--done" />
+      <section id="js--nav4maanden" class="tijdlijn__box start tijdlijn__box--active">
+        <p class="tijdlijn__box__txt">Nog 4 maanden</p>
+      </section>
+      <hr class="tijdlijn__line" />
+      <section id="js--nav3maanden" class="tijdlijn__box end">
+        <p class="tijdlijn__box__txt">Nog 3 maanden</p>
+      </section>
+      <hr class="tijdlijn__line" />
+      <section id="js--nav6weken" class="tijdlijn__box start">
+        <p class="tijdlijn__box__txt">Nog 6 weken</p>
+      </section>
+      <hr class="tijdlijn__line" />
+      <section id="js--nav9uur" class="tijdlijn__box end">
+        <p class="tijdlijn__box__txt">Nog 9 uur</p>
+      </section>
+      <hr class="tijdlijn__line" />
+      <section id="js--naveindceremonie" class="tijdlijn__box">
+        <p class="tijdlijn__box__txt">Eindceremonie</p>
+      </section>
+      <hr class="tijdlijn__line" />
+      <section id="js--navscore" class="tijdlijn__box end">
+        <p class="tijdlijn__box__txt">Score</p>
+      </section>
+      <hr class="tijdlijn__line" />
+      <section id="js--navinfo" class="tijdlijn__box start tijdlijn--done">
+        <p class="tijdlijn__box__txt">Informatiepagina</p>
+      </section>
+    </article>
+
+    <!-- header -->
+    <article id="js--header" class="header">
+      <section id="js--progressiebar" class="header__progressbar" tabindex="1">
+        <div id="js--progressiebarVulling" class="header__progressbar__balk">
+          <p class="header__progressbar__balk__txt">60%</p>
+        </div>
+      </section>
+    </article>
+
+    <div class="animatie">
+      <h1>Nog 4 maanden</h1>
+      <p>Water koken</p>
+    </div>
+
+    <!-- modal begin -->
+    <article class="background background__4maanden" id="js--background">
+      <section id="js--modal" class="background__modal background__modal__4maanden">
+        <button id="js--arrow--modal" class="background__arrow">
+          <i class="fa fa-close"></i>
+        </button>
+        <picture class="startmodal__figure">
+          <source srcset="images/sergeantDeBoer6_1044.webp" media="(min-width: 1000px)" type="image/webp" />
+          <source srcset="images/sergeantDeBoer6_640.webp" media="(min-width: 250px)" type="image/webp" />
+          <img
+            class="startmodal__figure__img"
+            srcset="images/sergeantDeBoer6_640.png 640w, images/sergeantDeBoer6_1044.png 1044w"
+            sizes="(min-width: 1000px) 1044px, (min-width: 250px) 640px, 640px"
+            src="images/sergeantDeBoer6_1044.png"
+            alt="sergeant"
+          />
+        </picture>
+        <section class="background__modal__textarea">
+          <p class="background__modal__textarea__text">
+            Tijdens de opleiding moet je altijd vroeg opstaan, het is van belang dat je dit uit jezelf doet. Je moet zorgen dat je op tijd je tas hebt ingepakt met daarin een thermoskan met heet water. <br>
+            <br> In deze opdracht leer je hoelang je het water moet koken en dat je het water meteen in de thermoskan moet doen. <br>
+            <br> Gebruik bij deze oefening de knoppen om de waterketel te vullen en het water te koken, zodat er genoeg warm water in de thermoskan komt.
+            Succes <span id="js--ingevoerdenaam"></span>!
+          </p>
+        </section>
+        <button id="js--4maandenbtn" class="background__modal__button" type="button" name="button">
+          Volgende
+        </button>
+      </section>
+    </article>
+
+    <div class="gridContainer">
+      <!-- Waterkoker scherm -->
+      <article id="js--waterkoker" class="waterkoker">
+        <!-- Eerste scherm -->
+        <section id="js--waterkoker--vullen" class="waterkoker__vullen">
+          <div id="js--waterkoker--vullen--grid" class="waterkoker__vullen__grid">
+            <div id="js--waterkoker--vullen-meter" class="waterkoker__vullen__meter">
+              <div class="waterkoker__vullen__meter__streepje"> </div>
+              <div id="js--waterkoker--vullen--meter--houder" class="waterkoker__vullen__meter__houder">
+                <div id="js--waterkoker--vullen--meter--bolletje" class="waterkoker__vullen__meter__bolletje">
+                </div>
+              </div>
+            </div>
+            <div id="js--waterkoker--timer" class="waterkoker__timer">
+              02 : 30
+            </div>
+            <div id="js--waterkoker--vullen--kraan" class="waterkoker__vullen__kraan">
+                <img src="images/kraan2.png" alt="De kraan">
+            </div>
+            <div id="js--waterkoker--vullen--waterkoker" class="waterkoker__vullen__waterkoker">
+                <img src="images/waterKetel.png" alt="De waterkoker">
+            </div>
+          </div>
+        </section>
+        <!-- Tweede scherm -->
+        <section id="js--waterkoker--koken" class="waterkoker__koken">
+          <div id="js--waterkoker--koken--grid" class="waterkoker__koken__grid">
+            <div id="js--waterkoker--koken-meter" class="waterkoker__koken__meter">
+              <div class="waterkoker__koken__meter__streepje"> </div>
+              <div id="js--waterkoker--koken--meter--houder" class="waterkoker__koken__meter__houder">
+                <div id="js--waterkoker--koken--meter--temperatuur" class="waterkoker__koken__meter__temperatuur"></div>
+              </div>
+            </div>
+            <div id="js--waterkoker--koken--timer" class="waterkoker__koken__timer">
+              02 : 30
+            </div>
+            <div id="js--waterkoker--koken--waterkoker" class="waterkoker__koken__waterkoker">
+              <img src="images/waterKetel.png" alt="De waterkoker staat uit">
+            </div>
+            <div id="js--waterkoker--koken--vuur--aan" class="waterkoker__koken__vuur">
+              <img src="images/waterKetelVuur.png" alt="De waterkoker staat aan">
+            </div>
+          </div>
+        </section>
+        <!-- Derde scherm -->
+        <section id="js--waterkoker--inschenken" class="waterkoker__inschenken">
+          <div id="js--waterkoker--inschenken--grid" class="waterkoker__inschenken__grid">
+            <div id="js--waterkoker--inschenken-meter" class="waterkoker__inschenken__meter">
+              <div id="js--waterkoker--inschenken--meter--houder" class="waterkoker__inschenken__meter__houder">
+                <img src="images/thermoskan.png" alt="De thermoskan">
+                <div id="js--waterkoker--inschenken--meter--water" class="waterkoker__inschenken__meter__water">
+
+                </div>
+              </div>
+            </div>
+            <div id="js--waterkoker--inschenken--timer" class="waterkoker__inschenken__timer">
+              02 : 30
+            </div>
+            <div id="js--waterkoker--inschenken--waterkoker" class="waterkoker__inschenken__waterkoker">
+                <img src="images/waterKetel.png" alt="De waterkoker">
+            </div>
+          </div>
+        </section>
+        <!-- Vierde scherm -->
+
+        <button id="js--waterkoker__action__button" class="action__buttons top__button blue__button groene__hover" type="button" name="button"> Kraan aan </button>
+        <button id="js--waterkoker__volgende__button" class="action__buttons bottom__button transparent__button" type="button" name="button"> Volgende stap </button>
+      </article>
+    </div>
+
+    <section id="js--waterkoker--eind" class="waterkoker__eind">
+      <article class="background background__4maanden" id="js--background2">
+        <section id="js--modal2" class="background__modal background__modal__4maanden">
+          <button id="js--arrow--modal2" class="background__arrow">
+            <i class="fa fa-close"></i>
+          </button>
+          <picture class="startmodal__figure">
+            <source srcset="images/sergeantDeBoer6_1044.webp" media="(min-width: 1000px)" type="image/webp" />
+            <source srcset="images/sergeantDeBoer6_640.webp" media="(min-width: 250px)" type="image/webp" />
+            <img
+              class="startmodal__figure__img"
+              srcset="images/sergeantDeBoer6_640.png 640w, images/sergeantDeBoer6_1044.png 1044w"
+              sizes="(min-width: 1000px) 1044px, (min-width: 250px) 640px, 640px"
+              src="images/sergeantDeBoer6_1044.png"
+              alt="sergeant"
+            />
+          </picture>
+          <section class="background__modal__textarea">
+            <p class="background__modal__textarea__text" id="js--eindText">
+            </p>
+          </section>
+          <button id="js--4maandenbtn2" class="background__modal__button" type="button" name="button">
+            Volgende
+          </button>
+        </section>
+      </article>
+    </section>
+
+  </main>
+</body>
+</html>

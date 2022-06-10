@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<script src="js/gegevens.js"></script>
+		<title>TheChosenOnes</title>
+	</head>
+	<body>
+		<main>
+			<!-- tijdlijn overlay -->
+			<article id="js--tijdlijn" class="tijdlijn">
+				<button id="js--arrow" class="tijdlijn__arrow"><i class="fa fa-close"></i></button>
+				<section id="js--navStart" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Start</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav9maanden" class="tijdlijn__box start">
+					<p class="tijdlijn__box__txt">Nog 9 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav8maanden" class="tijdlijn__box end">
+					<p class="tijdlijn__box__txt">Nog 8 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav6maanden" class="tijdlijn__box start">
+					<p class="tijdlijn__box__txt">Nog 6 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav5maanden" class="tijdlijn__box end">
+					<p class="tijdlijn__box__txt">Nog 5 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav4maanden" class="tijdlijn__box start">
+					<p class="tijdlijn__box__txt">Nog 4 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav3maanden" class="tijdlijn__box end">
+					<p class="tijdlijn__box__txt">Nog 3 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav6weken" class="tijdlijn__box start"><p class="tijdlijn__box__txt">Nog 6 weken</p></section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav9uur" class="tijdlijn__box end"><p class="tijdlijn__box__txt">Nog 9 uur</p></section>
+				<hr class="tijdlijn__line" />
+				<section id="js--naveindceremonie" class="tijdlijn__box start">
+					<p class="tijdlijn__box__txt">Eindceremonie</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--navscore" class="tijdlijn__box end"><p class="tijdlijn__box__txt">Score</p></section>
+				<hr class="tijdlijn__line" />
+				<section id="js--navinfo" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Informatiepagina</p>
+				</section>
+			</article>
+
+			<!-- header -->
+			<article id="js--header" class="header">
+				<section id="js--progressiebar" class="header__progressbar" tabindex="1">
+					<div id="js--progressiebarVulling" class="header__progressbar__balk">
+						<p class="header__progressbar__balk__txt">15%</p>
+					</div>
+				</section>
+			</article>
+
+			<section class="textarea">
+				<h1 class="textarea__h1">Wie ben jij?</h1>
+			</section>
+
+			<article class="gegevens">
+				<form class="gegevens__form" action="9maanden.html">
+					<label class="gegevens__form__label" for="js--inputNaam">Naam:</label><br />
+					<input
+						id="js--inputNaam"
+						class="gegevens__form__input"
+						type="text"
+						name="naam"
+						value=""
+						placeholder="Voer hier je naam in..."
+						required
+						tabindex="0"
+					/><br />
+					<label class="gegevens__form__label" for="js--inputLeeftijd">Leeftijd:</label><br />
+					<input
+						id="js--inputLeeftijd"
+						class="gegevens__form__input"
+						type="number"
+						name="leeftijd"
+						value=""
+						placeholder="Voer hier je leeftijd in..."
+						required
+						tabindex="1"
+					/><br />
+					<button id="js--formbtn" class="gegevens__form__btn" type="submit" name="button">Start</button>
+				</form>
+			</article>
+		</main>
+	</body>
+</html>

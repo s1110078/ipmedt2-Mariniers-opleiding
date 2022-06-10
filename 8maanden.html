@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/8maanden.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<title>TheChosenOnes</title>
+	</head>
+	<body>
+		<main>
+			<!-- tijdlijn overlay -->
+			<article id="js--tijdlijn" class="tijdlijn">
+				<button id="js--arrow" class="tijdlijn__arrow">
+					<i class="fa fa-close"></i>
+				</button>
+				<section id="js--navStart" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Start</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav9maanden" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 9 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav8maanden" class="tijdlijn__box end tijdlijn__box--active">
+					<p class="tijdlijn__box__txt">Nog 8 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav6maanden" class="tijdlijn__box start">
+					<p class="tijdlijn__box__txt">Nog 6 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav5maanden" class="tijdlijn__box end">
+					<p class="tijdlijn__box__txt">Nog 5 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav4maanden" class="tijdlijn__box start">
+					<p class="tijdlijn__box__txt">Nog 4 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav3maanden" class="tijdlijn__box end">
+					<p class="tijdlijn__box__txt">Nog 3 maanden</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav6weken" class="tijdlijn__box start">
+					<p class="tijdlijn__box__txt">Nog 6 weken</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--nav9uur" class="tijdlijn__box end">
+					<p class="tijdlijn__box__txt">Nog 9 uur</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--naveindceremonie" class="tijdlijn__box start">
+					<p class="tijdlijn__box__txt">Eindceremonie</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--navscore" class="tijdlijn__box end">
+					<p class="tijdlijn__box__txt">Score</p>
+				</section>
+				<hr class="tijdlijn__line" />
+				<section id="js--navinfo" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Informatiepagina</p>
+				</section>
+			</article>
+
+			<!-- animatie -->
+			<div class="animatie">
+				<h1>Nog 8 maanden</h1>
+				<p>Tent opzetten</p>
+			</div>
+
+			<!-- modal -->
+			<article class="background background__9maanden" id="js--background">
+				<section id="js--modal" class="background__modal background__modal__9maanden">
+					<button id="js--arrow--modal" class="background__arrow">
+						<i class="fa fa-close"></i>
+					</button>
+					<picture class="startmodal__figure">
+						<source srcset="images/sergeantDeBoer6_1044.webp" media="(min-width: 1000px)" type="image/webp" />
+						<source srcset="images/sergeantDeBoer6_640.webp" media="(min-width: 250px)" type="image/webp" />
+						<img
+							class="startmodal__figure__img"
+							srcset="images/sergeantDeBoer6_640.png 640w, images/sergeantDeBoer6_1044.png 1044w"
+							sizes="(min-width: 1000px) 1044px, (min-width: 250px) 640px, 640px"
+							src="images/sergeantDeBoer6_1044.png"
+							alt="sergeant"
+						/>
+					</picture>
+					<section class="background__modal__textarea">
+						<p class="background__modal__textarea__text">
+							Tijdens de opleiding is het van belang dat je snel je tent kan opbouwen, om je snel te verschuilen voor de
+							vijand of voor de regen. Hierbij is teamwerk essentieel.<br /><br /><b>Kijk hoe dit in ze gang gaat!</b>
+						</p>
+					</section>
+					<button id="js--9maandenbtn" class="background__modal__button" type="button" name="button">
+						Volgende
+					</button>
+				</section>
+			</article>
+
+			<!-- header -->
+			<article id="js--header" class="header">
+				<section id="js--progressiebar" class="header__progressbar" tabindex="0">
+					<div id="js--progressiebarVulling" class="header__progressbar__balk">
+						<p class="header__progressbar__balk__txt">30%</p>
+					</div>
+				</section>
+			</article>
+
+			<!-- modal -->
+			<article class="background backgrounddissapear" id="js--backgroundmaand8">
+				<section id="js--modalmaand8" class="background__modal modaldissapear">
+					<button id="js--arrow--modal--next" class="background__arrow">
+						<i class="fa fa-close"></i>
+					</button>
+					<picture class="startmodal__figure">
+						<source srcset="images/sergeantDeBoer6_1044.webp" media="(min-width: 1000px)" type="image/webp" />
+						<source srcset="images/sergeantDeBoer6_640.webp" media="(min-width: 250px)" type="image/webp" />
+						<img
+							class="startmodal__figure__img"
+							srcset="images/sergeantDeBoer6_640.png 640w, images/sergeantDeBoer6_1044.png 1044w"
+							sizes="(min-width: 1000px) 1044px, (min-width: 250px) 640px, 640px"
+							src="images/sergeantDeBoer6_1044.png"
+							alt="sergeant"
+						/>
+					</picture>
+					<section class="background__modal__textarea">
+						<p class="background__modal__textarea__text">
+							<span id="js--ingevoerdenaam"></span>!<br />
+							jij vond het tent op zetten 
+							<b><span id="js--moeilijkheid"></span></b>. Zoals je ziet kan het heel frustrerend zijn als het opzetten van je tent niet lukt.
+							Ook ben je afhangelijk van andere collegas want voordat je het weet moet je weer opnieuw beginnen.<br /><br />In de
+							volgende maand wil ik met je spreken over hoe je de opleiding tot nu toe vindt, tot dan!
+						</p>
+					</section>
+					<button class="background__modal__button" id="js--9maandenbtn__next" type="button" name="button">
+						Volgende
+					</button>
+				</section>
+			</article>
+
+			<!-- tentbouwen -->
+			<article class="tentopzetten">
+				<h2 class="tentopzetten__h2">Tent opzetten</h2>
+				<p class="tentopzetten__p">
+					In onderstaande video is te zien hoe andere rekruten een tent opzetten.<br>Als je de video hebt bekeken kan je onder de video aangeven of je dit moeilijk lijkt of juist niet.
+				</p>
+				<video class="tentopzetten_video" controls>
+					<source src="videos/Tent.mp4" type="video/mp4" />
+				</video>
+				<h2 class="tentopzetten__h2">Lijkt jou het moeilijk?</h2>
+
+				<div class="tentopzetten__slidecontainer">
+					<input type="range" min="1" max="100" value="50" class="tentopzetten__slidecontainer__slider" id="myRange" />
+					<p class="tentopzetten__slidecontainer__p">Jij vind dit: <b><span id="demo"></span></b></p>
+				</div>
+
+				<button id="js--8maanden" type="button" class="tentopzetten__button action__buttons blue__button" name="button">
+					Volgende
+				</button>
+			</article>
+		</main>
+	</body>
+</html>

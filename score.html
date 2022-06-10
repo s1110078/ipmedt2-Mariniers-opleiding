@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/score.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<title>TheChosenOnes</title>
+	</head>
+	<body>
+		<main>
+			<!-- tijdlijn overlay -->
+			<article id="js--tijdlijn" class="tijdlijn">
+				<button id="js--arrow" class="tijdlijn__arrow"><i class="fa fa-close"></i></button>
+				<section id="js--navStart" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Start</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav9maanden" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 9 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav8maanden" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 8 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav6maanden" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 6 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav5maanden" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 5 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav4maanden" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 4 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav3maanden" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 3 maanden</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav6weken" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 6 weken</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--nav9uur" class="tijdlijn__box end tijdlijn--done">
+					<p class="tijdlijn__box__txt">Nog 9 uur</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--naveindceremonie" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Eindceremonie</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--navscore" class="tijdlijn__box end tijdlijn__box tijdlijn--done">
+					<p class="tijdlijn__box__txt">Score</p>
+				</section>
+				<hr class="tijdlijn__line tijdlijn--done" />
+				<section id="js--navinfo" class="tijdlijn__box start tijdlijn--done">
+					<p class="tijdlijn__box__txt">Informatiepagina</p>
+				</section>
+			</article>
+
+			<!-- header -->
+			<article id="js--header" class="header">
+				<section id="js--progressiebar" class="header__progressbar">
+					<div id="js--progressiebarVulling" class="header__progressbar__balk">
+						<p class="header__progressbar__balk__txt">100%</p>
+					</div>
+				</section>
+			</article>
+
+		<!-- info modal -->
+			<article id="js--backgroundScore" class="infoscore">
+				<section id="js--modalScore" class="infoscore__modal">
+						<button id="js--arrowInfo" class="background__arrow"><i class="fa fa-close"></i></button>
+						<h2 class="infoscore__modal__h2">Resultaten</h2>
+						<ul class="infoscore__modal__list">
+							<li class="infoscore__modal__list__li"><b>Test 1</b> hoort bij<b> 9 maanden.</b><i id="js--test1Info"></i></li>
+							<li class="infoscore__modal__list__li"><b>Test 2</b> hoort bij<b> 8 maanden.</b><i id="js--test2Info"></i></li>
+							<li class="infoscore__modal__list__li"><b>Test 3</b> hoort bij<b> 6 maanden.</b><i id="js--test3Info"></i></li>
+							<li class="infoscore__modal__list__li"><b>Test 4</b> hoort bij<b> 5 maanden.</b><i id="js--test4Info"></i></li>
+							<li class="infoscore__modal__list__li"><b>Test 5</b> hoort bij<b> 4 maanden.</b><i id="js--test5Info"></i></li>
+							<li class="infoscore__modal__list__li"><b>Test 6</b> hoort bij<b> 3 maanden.</b><i id="js--test6Info"></i></li>
+							<li class="infoscore__modal__list__li"><b>Test 7</b> hoort bij<b> 6 weken.</b><i id="js--test7Info"></i></li>
+							<li class="infoscore__modal__list__li"><b>Test 8</b> hoort bij<b> 9 uur.</b><i id="js--test8Info"></i></li>
+						</ul>
+						<button id="js--snapBtn"class="infoscore__modal__button" type="button" name="button">Ik snap het</button>
+				</section>
+			</article>
+			<article class="score">
+				<h1 class="score__h1">score</h1>
+				<i id="js--scoreIcon" class=" score__icon fa fa-info-circle"></i>
+				<hr class="score__line"/>
+				<section class="score__board">
+					<!-- rij1 -->
+					<p class="score__board__test">Test 1</p>
+					<i id="js--icon1" class="fa score__board__icon"></i>
+					<hr class="score__board__line" />
+					<p class="score__board__test">test 5</p>
+					<i id="js--icon5" class="fa score__board__icon"></i>
+
+					<!-- rij2 -->
+					<p class="score__board__test">Test 2</p>
+					<i id="js--icon2" class="fa score__board__icon"></i>
+					<hr class="score__board__line" />
+					<p class="score__board__test">test 6</p>
+					<i id="js--icon6" class="fa score__board__icon"></i>
+
+					<!-- rij3 -->
+					<p class="score__board__test">Test 3</p>
+					<i id="js--icon3" class="fa score__board__icon"></i>
+					<hr class="score__board__line" />
+					<p class="score__board__test">test 7</p>
+					<i id="js--icon7" class="fa score__board__icon"></i>
+
+					<!-- rij4 -->
+					<p class="score__board__test">Test 4</p>
+					<i id="js--icon4" class="fa score__board__icon"></i>
+					<hr class="score__board__line" />
+					<p class="score__board__test">test 8</p>
+					<i id="js--icon8" class="fa  score__board__icon"></i>
+				</section>
+				<section class="buttonsection">
+					<button id="js--toinfo" class="action__buttons top__button blue__button" type="button" name="button">Meer informatie</button>
+					<button id="js--tostart" class="action__buttons bottom__button transparent__button" type="button" name="button">
+						Opnieuw beginnen
+					</button>
+				</section>
+			</article>
+		</main>
+	</body>
+</html>
